@@ -1,5 +1,5 @@
 Package: ATM
-Title: Inferring age-dependent disease topic from diagnosis data 
+Title: Inferring age-dependent disease topic from diagnosis data MODIFIED VERSION
 Version: 0.0.0.9000
 Authors@R: 
     person("Xilin", "Jiang", , "xilinjiang@hsph.harvard.edu", role = c("aut", "cre"),
