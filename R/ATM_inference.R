@@ -2,11 +2,12 @@
 topic_init_baseline <- function(rec_data, ds_list, topic_num){
   # arrange the data stack by individual is very important as we need to make sure the matrix could be rejoined into a single matrix
   first_incidence_age <- rec_data %>%
-    arrange(eid) %>%
-    group_by(eid, diag_icd10) %>%
-    arrange(age_diag, .by_group = T) %>% # keep only the first records of repeated diagnosis
-    dplyr::slice(1) %>%
-    dplyr::ungroup()
+    arrange(eid)
+#  %>%
+#    group_by(eid, diag_icd10) %>%
+#    arrange(age_diag, .by_group = T) %>% # keep only the first records of repeated diagnosis
+#    dplyr::slice(1) %>%
+#    dplyr::ungroup()
 
   # plot the number distribution of indiviudal diseases
   df_number_records <- first_incidence_age %>%
