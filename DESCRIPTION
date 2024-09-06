@@ -1,4 +1,4 @@
-Package: ATM
+Package: ATM_mod
 Title: Inferring age-dependent disease topic from diagnosis data 
 Version: 0.0.0.9000
 Authors@R: 
